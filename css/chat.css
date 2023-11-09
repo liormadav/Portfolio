@@ -1,0 +1,37 @@
+
+body{
+background: rgb(46, 43, 43);
+}
+#header{
+width: 100%;
+}
+
+h1{
+    color: silver;
+    text-align: center;
+    font-family: 'Itim', cursive;
+}
+
+a{
+    font-size: 24px;
+    color: rgb(109, 164, 185);
+    text-decoration: underline rgb(109, 164, 185);
+}
+
+a:hover{
+    font-size: 42px;
+}
+
+#main{
+    width: 100%;
+    text-align: center;
+}
+
+#text{
+    text-align: right;
+    position: absolute;
+    bottom: 31%;
+    right: 2.8%;
+    color: snow;
+    opacity: 75%;
+}

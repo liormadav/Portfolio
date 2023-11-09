@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+body{
+    background-color: darkgrey;
+}
+ul {
+    font-size: 19px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+  }
+  
+  li {
+    float: left;
+    border-right:1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: cadetblue;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+
+  #slider{
+      overflow: hidden;
+  }
+  #slider figure{
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      animation: 20s slider infinite;
+  }
+
+  #slider figure img{
+      width: 20%;
+      float: left;
+  }
+
+  @keyframes slider {
+      0% {
+          left: 0;
+      }
+      20%{
+          left: 0;
+      }
+      25%{
+          left: -100%;
+      }
+      45%{
+          left: -100%;
+      }
+      50%{
+          left: -200%;
+      }
+      70%{
+          left: -200%;
+      }
+      75%{
+          left: -300%;
+      }
+      95%{
+          left: -300%;
+      }
+      100%{
+          left: -400%;
+      }
+  }
+
+  #txt{
+      
+    }
+  p{
+      max-width: 50%;
+      font-size: 160%;
+      float: right;
+      text-align: right;
+      margin: 2%;
+      right: 0;
+  }
+
+  #circle{
+      margin: 2%;
+      clip-path: circle();
+      height: 250px;
+      position: absolute;
+      top: 45%;
+      left: 25%;
+}
+
+  h1{
+    font-family: 'Dela Gothic One', cursive;
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 1080px) {
+      #circle{
+          height: 360px;
+          top: 15%;
+      }
+      h1{
+          float: right;
+      }
+  }
